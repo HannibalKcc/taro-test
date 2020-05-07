@@ -1,6 +1,7 @@
 const config = {
   projectName: 'taro-test',
   date: '2020-4-27',
+	// 设计稿尺寸，默认 750
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -53,6 +54,8 @@ const config = {
     }
   },
   h5: {
+  	// 目前仅 taro-ui 需要使用，暂时关闭
+		// esnextModules: ['taro-ui']，
     publicPath: '/',
     staticDirectory: 'static',
     postcss: {
@@ -75,11 +78,11 @@ const config = {
       }
     }
   }
-}
+};
 
 module.exports = function (merge) {
   if (process.env.NODE_ENV === 'development') {
-    return merge({}, config, require('./dev'))
+    return merge({}, config, require('./dev'));
   }
-  return merge({}, config, require('./prod'))
-}
+  return merge({}, config, require('./prod'));
+};

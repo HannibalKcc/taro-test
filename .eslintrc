@@ -2,13 +2,19 @@
   "extends": [
     "taro"
   ],
+	"plugins": [
+  ],
   "rules": {
+		// 临时补丁
+		"react/jsx-indent-props": 0,
+		"react/no-unused-state": 1,
     "no-unused-vars": [
-      "error",
+      1,
       {
         "varsIgnorePattern": "Taro"
       }
     ],
+		"react/jsx-tag-spacing": "never",
     "react/jsx-filename-extension": [
       1,
       {
