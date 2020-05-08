@@ -54,18 +54,18 @@ const config = {
     }
   },
   h5: {
-  	// 目前仅 taro-ui 需要使用，暂时关闭
-		// esnextModules: ['taro-ui']，
-    publicPath: '/',
-    staticDirectory: 'static',
-    postcss: {
-      autoprefixer: {
-        enable: true,
-        config: {
-          browsers: [
-            'last 3 versions',
-            'Android >= 4.1',
-            'ios >= 8'
+		// 目前仅 taro-ui 需要使用，暂时关闭
+		esnextModules: ['taro-ui'],
+		publicPath: '/',
+		staticDirectory: 'static',
+		postcss: {
+			autoprefixer: {
+				enable: true,
+				config: {
+					browsers: [
+						'last 3 versions',
+						'Android >= 4.1',
+						'ios >= 8'
           ]
         }
       },

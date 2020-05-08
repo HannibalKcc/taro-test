@@ -1,28 +1,32 @@
-import Taro, { Component } from '@tarojs/taro';
-import { View, Text } from '@tarojs/components';
+import Taro, {Component} from '@tarojs/taro';
+import {View, Text} from '@tarojs/components';
 import './index.scss';
 
 export default class Index extends Component {
+	componentWillMount() {
+	}
 
-  componentWillMount () { }
+	componentDidMount() {
+	}
 
-  componentDidMount () { }
+	componentWillUnmount() {
+	}
 
-  componentWillUnmount () { }
+	componentDidShow() {
+	}
 
-  componentDidShow () { }
+	componentDidHide() {
+	}
 
-  componentDidHide () { }
+	config = {
+		navigationBarTitleText: '首页'
+	};
 
-  config = {
-    navigationBarTitleText: '首页'
-  }
-
-  render () {
+	render() {
 		return (
 			<View className='index'>
 				<Text>Hello world!</Text>
 			</View>
 		);
-  }
+	}
 }

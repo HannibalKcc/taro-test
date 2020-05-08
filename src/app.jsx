@@ -10,7 +10,6 @@ import './app.scss';
 // }
 
 class App extends Component {
-
   componentDidMount () {}
 
   componentDidShow () {}
@@ -28,7 +27,8 @@ class App extends Component {
 			'pages/nav/nav',
 			'pages/nav/children/childA',
 			'pages/cssStyle/cssStyle',
-			'pages/taroStudy/swiper/swiper'
+			'pages/taroStudy/swiper/swiper',
+			'pages/customizeComponent/customizeComponent'
 		],
 		window: {
 			backgroundTextStyle: 'light',

@@ -19,11 +19,17 @@ JSX 数组操作比较反人类 [参考](https://github.com/NervJS/taro/blob/mas
     .a > .b { } /* 除非 .a 是 view 组件节点，否则不一定会生效 */
 ```
 
+使用`props.children` 务必当心！即使是一个变量传递、打印也是会翻车的，非常 magic
+
 ## TODO LIST
 - [X] 列表渲染
-- [ ] 条件渲染
+- [X] 条件渲染
 - [X] 路由
-- [ ] 自定义组件
+- [X] 自定义组件
+- [X] props、默认值 defaultProps(注意，插槽不能用这个)
+- [ ] 小程序上的 props 类型检查按照文档来说有点小问题，那只能自己检查了？？？
+- [ ] context
+- [ ] slot、组合（需要遵守跟 this.props.children 一样的规则）
 - [ ] 函数调用弹窗
 - [ ] swiper
 - [ ] Taro-ui
