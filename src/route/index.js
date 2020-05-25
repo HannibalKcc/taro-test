@@ -6,6 +6,7 @@ const Example = {pagePath: 'pages/example/example', text: 'Example'};
 const Nav = {pagePath: '/pages/nav/nav', info: '导航研究'};
 const CssStyle = {pagePath: '/pages/cssStyle/cssStyle', info: 'CSS样式研究'};
 const CustomizeComponent = {pagePath: '/pages/customizeComponent/customizeComponent', info: '自定义组件'};
+const WatchComputed = {pagePath: '/pages/learnWatchComputed/learnWatchComputed', info: '模拟 watch computed 研究'};
 
 // 泰罗原生组件学习
 const Swiper = {pagePath: '/pages/taroStudy/swiper/swiper', info: 'Taro Swiper组件研究'};
@@ -21,6 +22,7 @@ const routerItemList = [
 	Nav,
 	CssStyle,
 	CustomizeComponent,
+	WatchComputed,
 	...taroStudyList,
 ];
 

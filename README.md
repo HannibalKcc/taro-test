@@ -21,6 +21,8 @@ JSX 数组操作比较反人类 [参考](https://github.com/NervJS/taro/blob/mas
 
 使用`props.children` 务必当心！即使是一个变量传递、打印也是会翻车的，非常 magic
 
+taro 主依赖本身的版本必须跟 package.json 的 taro 其他依赖版本一致，否则会有各种神奇的错误
+
 ## TODO LIST
 - [X] 列表渲染
 - [X] 条件渲染
@@ -30,9 +32,11 @@ JSX 数组操作比较反人类 [参考](https://github.com/NervJS/taro/blob/mas
 - [ ] 小程序上的 props 类型检查按照文档来说有点小问题，那只能自己检查了？？？
 - [ ] context
 - [ ] slot、组合（需要遵守跟 this.props.children 一样的规则）
-- [ ] 函数调用弹窗
+- [x] 函数调用弹窗 (不存在的！)
 - [ ] swiper
-- [ ] Taro-ui
+- [x] Taro-ui (dongfeng 有)
 - [ ] 权限申请
 - [ ] 调用相机
 - [ ] ICON 或者 SVG 处理
+- [ ] 属性监听
+- [ ] 函数式组件以及 `hook` 实操

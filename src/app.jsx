@@ -28,7 +28,8 @@ class App extends Component {
 			'pages/nav/children/childA',
 			'pages/cssStyle/cssStyle',
 			'pages/taroStudy/swiper/swiper',
-			'pages/customizeComponent/customizeComponent'
+			'pages/learnWatchComputed/learnWatchComputed',
+			'pages/customizeComponent/customizeComponent',
 		],
 		window: {
 			backgroundTextStyle: 'light',
