@@ -1,47 +1,13 @@
 {
-	"miniprogramRoot": "dist/",
-	"projectname": "taro-test",
-	"description": "泰罗，冲鸭~",
-	"appid": "wxe1eb75b40de723e9",
-	"setting": {
-		"urlCheck": true,
-		"es6": false,
-		"postcss": false,
-		"minified": false
-	},
-	"compileType": "miniprogram",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/learnWatchComputed/learnWatchComputed",
-					"pathName": "pages/learnWatchComputed/learnWatchComputed",
-					"scene": null
-				}
-			]
-		}
-	}
+  "miniprogramRoot": "./dist",
+  "projectname": "myApp",
+  "description": "",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
 }
