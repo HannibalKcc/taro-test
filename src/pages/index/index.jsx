@@ -1,24 +1,58 @@
-import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.scss'
+import Taro from '@tarojs/taro';
+import {Component} from 'react';
+import {View, Text, Button} from '@tarojs/components';
+import './index.scss';
 
 export default class Index extends Component {
+  constructor(props) {
+    super(props);
 
-  componentWillMount () { }
+    this.routeList = [
+      {
+        url: '/pages/echart_demo/echart_demo',
+        name: 'echart_demo',
+      },
+      {
+        url: '/pages/picker_demo/picker_demo',
+        name: 'picker_demo',
+      },
+    ];
+  }
 
-  componentDidMount () { }
+  componentWillMount() {
+  }
 
-  componentWillUnmount () { }
+  componentDidMount() {
+  }
 
-  componentDidShow () { }
+  componentWillUnmount() {
+  }
 
-  componentDidHide () { }
+  componentDidShow() {
+  }
 
-  render () {
+  componentDidHide() {
+  }
+
+  render() {
     return (
-      <View className='index'>
+      <View className="index">
         <Text>Hello world!</Text>
+        {
+          this.routeList.map((item, index) => (
+            <Button
+              className="btn-max-w" key={index}
+              onClick={() => {
+                Taro.navigateTo({
+                  url: item.url
+                });
+              }}
+            >
+              {item.name}
+            </Button>
+          ))
+        }
       </View>
-    )
+    );
   }
 }
