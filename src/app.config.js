@@ -3,6 +3,7 @@ export default {
     'pages/index/index',
     'pages/echart_demo/echart_demo',
     'pages/picker_demo/picker_demo',
+    'pages/table_demo/table_demo',
   ],
   tabBar: {
     list: [

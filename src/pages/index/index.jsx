@@ -16,6 +16,10 @@ export default class Index extends Component {
         url: '/pages/picker_demo/picker_demo',
         name: 'picker_demo',
       },
+      {
+        url: '/pages/table_demo/table_demo',
+        name: 'table_demo',
+      },
     ];
   }
 
